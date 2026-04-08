@@ -1,0 +1,42 @@
+body { 
+	background-color: gainsboro;
+	padding: 30px 40px;
+}
+
+h1,h2, h3 {
+	text-align: center;
+	margin: auto;
+	background-color: darkgray; 
+	color: 
+}
+
+img {
+	width: 120px;
+	height: 160px;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+#tt table { 
+	background-color: linen; 
+	display: block;
+	margin: 20px auto;
+	border: 2px solid white;
+	border-radius: 8px;
+}
+
+
+th {
+		background-color: #DEB887;
+}
+
+td { 
+	background-color: linen; 
+}
+
+#bang table {
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	height:200px;
+}
