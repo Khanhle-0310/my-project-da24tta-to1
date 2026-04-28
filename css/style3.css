@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #cfd6dc;
+}
+
+/* Khung form */
+.container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #9b316d;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+/* Input + textarea */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
