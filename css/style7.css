@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container sản phẩm */
+.product-item {
+    width: 250px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hiệu ứng hover */
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Ảnh */
+.product-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Thông tin */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-info p:nth-child(2) {
+    color: #e53935;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Link */
+.product-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.product-info a:hover {
+    background-color: #388e3c;
+}
+
+/* Nút thêm */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1976D2;
+}

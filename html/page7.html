@@ -1,0 +1,52 @@
+<!Doctype html>
+
+<html lang="vi">
+
+	<head>
+		<title>Dự Án</title>
+		<meta charset ="utf-8">	
+		<link rel="stylesheet" href="../css/style7.css">
+	</head>
+	
+	<body>
+        <script>
+            const myDiv= document.createElement("div"); //div cha
+            myDiv.setAttribute("class","product-item");
+
+            const myImage= document.createElement("div");   //div con
+            myImage.setAttribute("class","product-image");
+            const productImg = document.createElement("img");
+            productImg.setAttribute("src","../assets/images/milo.jpg"); //thêm ảnh
+            productImg.setAttribute("alt","Sữa milo");
+            myImage.appendChild(productImg);
+            myDiv.appendChild(myImage); //gắn con vào cha
+            const myInfo = document.createElement("div");    //div con
+            myInfo.setAttribute("class","product-info");
+            //Ten
+            const p1 = document.createElement("p");
+            const productName = document.createTextNode("Sữa milo");
+            p1.appendChild(productName);
+            //Gia
+            const p2 = document.createElement("p");
+            const productPrice = document.createTextNode("10.000 vnđ");
+            p2.appendChild(productPrice);
+
+            const linkElement = document.createElement("a");
+            linkElement.setAttribute("href","https://www.nestlemilo.com.vn/");
+            const linkText = document.createTextNode("Nhấn xem chi tiết");
+            linkElement.appendChild(linkText);
+
+            myInfo.appendChild(p1);
+            myInfo.appendChild(p2);
+            myInfo.appendChild(linkElement);
+            myDiv.appendChild(myInfo);
+            
+            //đưa cha ra ngoài
+            document.body.appendChild(myDiv);
+        </script>
+            <div id="product-list">
+                <button onclick="loadAllProduct()">Thêm</button>
+                <script src="..//js/lib.js"></script>
+            </div>
+    </body>
+</html>
