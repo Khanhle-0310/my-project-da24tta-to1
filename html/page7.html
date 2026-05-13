@@ -32,7 +32,7 @@
             p2.appendChild(productPrice);
 
             const linkElement = document.createElement("a");
-            linkElement.setAttribute("href","https://www.nestlemilo.com.vn/");
+            linkElement.setAttribute("href", "detail.html?id=" + product.productLink);
             const linkText = document.createTextNode("Nhấn xem chi tiết");
             linkElement.appendChild(linkText);
 
@@ -46,7 +46,9 @@
         </script>
             <div id="product-list">
                 <button onclick="loadAllProduct()">Thêm</button>
-                <script src="..//js/lib.js"></script>
+                <script src="..//js/lib.js">
+                loadProducts(productDatabase);
+                </script>
             </div>
     </body>
 </html>
